@@ -41,10 +41,20 @@
       text-align: center;
     }
 
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .logo {
       width: min(260px, 68vw);
       height: auto;
       display: block;
+    }
+
+    .spacer {
+      height: clamp(1.75rem, 5vw, 2.5rem);
     }
 
     h1 {
@@ -73,7 +83,10 @@
 </head>
 <body>
   <main>
-    <img class="logo" src="images/logo.png" alt="Tileit" width="260" height="63">
+    <div class="logo-wrap">
+      <img class="logo" src="images/logo.png" alt="Tileit" width="260" height="63">
+    </div>
+    <div class="spacer"></div>
     <h1>Próximamente</h1>
     <p>Estamos preparando algo nuevo. Volvé muy pronto.</p>
   </main>
